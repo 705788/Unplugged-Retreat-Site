@@ -87,6 +87,201 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* --------------- Base Header - Footer Styles ------------ */
+
+header,
+footer {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: row wrap;
+}
+
+/* Header styles */
+
+header {
+}
+
+header .content-wrapper {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: column;
+}
+
+header figure {
+
+}
+
+.header-divider {
+	border-top: 1px solid gray; /* come back to this! */
+	width: 100%;
+}
+
+header nav {
+	width: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;}
+
+header nav ul {
+	width: 100%;
+	list-style: none;
+	padding: 0;
+
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul li {
+	display: inline;
+}
+
+
+/* Footer styles */
+
+footer {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: column;
+}
+
+footer .content-wrapper {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: column nowrap;
+}
+
+.footer-content {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: column;
+}
+
+footer .contact {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: column;
+}
+
+footer .contact h4 {
+	margin-bottom: 0;
+}
+
+footer address p {
+	text-align: center;
+}
+
+footer .social {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: column;
+}
+
+footer .social-icons {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: row nowrap;
+}
+
+footer .copyright {
+	text-align: center;
+}
+
+
+
+
+/* --------------- Mobile Styles - Homepage ------------ */
+
+.hero-area,
+aside,
+.features,
+.reviews {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: column;
+}
+
+main .content-wrapper {
+	width: 94%;
+}
+
+aside .form input {
+	width:100%;
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: column;
+}
+
+.features-items {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: column;
+}
+
+.features-items article {
+	text-align: center;
+	width: 50%;
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: column;
+}
+
+
+/* --------------- Mobile Styles - FAQ page ------------ */
+
+main {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: column;
+}
+
+main .faq {
+	width: 94%;
+}
+
+
+
+/* --------------- Mobile Styles - About page ------------ */
+
+/* main {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: column;
+}
+******* already coded this in the above FAQ page section **/
+
+main .mission,
+.map,
+main .contact-section {
+	width: 94%;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -260,4 +455,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
