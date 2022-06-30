@@ -123,6 +123,7 @@ header figure {
 
 header nav {
 	width: 60%;
+	margin: 0;
 	display: flex;
     justify-content: space-around;
     align-items: center;
@@ -261,11 +262,6 @@ aside .form input {
 	text-align: center;
 	width: 63%;
 	margin: 30px 0;
-
-	/*display: flex;
-    justify-content: center;
-    align-items: center;
-	flex-flow: column;*/
 }
 
 .features .features-items {
@@ -367,13 +363,6 @@ main .faq {
 
 
 
-
-
-
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -462,16 +451,172 @@ main .faq {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/* ===========================================================
+============ tablet ==============================
+=====================
+======== */
+
+@media only screen and (min-width: 768px) {
+/* ==========================================================================
+   Homepage
+   ========================================================================== */
+	/* General styles */
+    .content-wrapper {
+        max-width: 640px;
+        margin: 100px 0;
+    }
+
+    /* Header */
+
+    header {
+		padding: 33px 0;
+    }
+
+    header .content-wrapper {
+        width:100%;
+		justify-content: space-between;
+    }
+
+	header figure {
+		margin-left: 0;
+	}
+
+	.header-divider {
+        display: none;
+    }
+
+    header nav {
+		width:20%;
+    }
+
+    header nav ul {
+		justify-content: space-between;
+    }
+
+
+
+
+    /* Footer */
+    footer .content-wrapper {
+		width:66%;
+        margin: 100px 0;
+    }
+
+    .footer-content {
+		flex-flow: row;
+		justify-content: space-between;
+		align-items: flex-start;
+    }
+
+    footer .contact {
+        margin-bottom: 0;
+    }
+
+    footer .copyright {
+        width:100%;
+    }
+
+/* ==========================================================================
+   Home Page
+   ========================================================================== */
+
+
+    /* Hero Area */
+
+    /* Aside */
+    aside .content-wrapper {
+        margin: 50px 0;
+		display: flex;
+		justify-content:space-between;
+    }
+
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+        width:40%;
+        margin: 0;
+    }
+
+    /* Features */
+
+    .features article {
+		display: flex;
+		flex-flow: column wrap;
+		flex-basis: 50%;
+		justify-content: center;
+		align-items: center;
+    }
+
+    .features .features-item-description {
+        width:50%;
+    }
+
+    /* Reviews */
+    .reviews article {
+		display: flex;
+		justify-content: space-between;
+    }
+
+    .reviews article div {
+        width:49%;
+    }
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+
+   .mission-content {
+        display:flex;
+        justify-content: space-between;
+        align-items:flex-start;
+		padding-top: 20px
+    }
+
+    .mission-content p {
+        width:45%;
+    }
+
+    .contact-section .content-wrapper h2 {
+        width:80%;
+    }
+
+    .contact-content {
+        display:flex;
+        justify-content:space-between;
+        align-items:flex-start;
+	}
+
+
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+    .faq .content-wrapper {
+        justify-content: space-between;
+		align-items: flex-start;
+    }
+
+    .faq-content {
+        flex-basis: 45%;
+		/* this, combined with the above space-between, sets the two-column layout for tablets!!! so cool! */
+    }
+
+    .faq h2 {
+        width: 100%;
+    }
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+
+/* ===================================================================
+====================================================
+	DESKTOP
+=================================
+-------------*/
+
+@media only screen and (min-width: 1200px) {
+
 }
+
+
+
 
 /* ==========================================================================
    Print styles.
