@@ -344,8 +344,7 @@ main .faq {
 
 .mission,
 .contact-section {
-	width: 94%;
-
+	width: 100%;
 	display: flex;
     justify-content: center;
     align-items: center;
@@ -356,9 +355,7 @@ main .faq {
   margin: 0;
 }
 
-.map {
-	width: 94%;
-}
+.map {}
 
 
 
@@ -522,6 +519,9 @@ main .faq {
 
 
     /* Hero Area */
+	.hero-area {
+		width:100%;
+	}
 
     /* Aside */
     aside .content-wrapper {
@@ -547,7 +547,7 @@ main .faq {
     }
 
     .features .features-item-description {
-        width:50%;
+        width:62%;
     }
 
     /* Reviews */
@@ -612,6 +612,74 @@ main .faq {
 -------------*/
 
 @media only screen and (min-width: 1200px) {
+/* ==========================================================================
+   Homepage
+   ========================================================================== */
+	/* General styles */
+    .content-wrapper {
+        max-width: 960px;
+    }
+
+    /* Header */
+
+/* ==========================================================================
+   Home Page
+   ========================================================================== */
+
+
+    /* Hero Area */
+	.hero-area h1 {
+		width: 60%;
+	}
+
+    /* Aside */
+	aside {
+		width: 100%;
+	}
+
+    aside .content-wrapper {
+		justify-content:space-around;
+    }
+
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+        width:33%;
+    }
+
+    /* Features */
+
+	.features h2 {
+		width: 90%;
+	}
+
+    .features article {
+		flex-basis: 33%;
+    }
+
+
+    /* Reviews */
+	.reviews article div {
+    	width: 42%;
+    }
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+	.mission h2,
+    .contact-section .content-wrapper h2 {
+        width: 95%;
+    }
+
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+
+    .faq h2 {
+        width: 100%;
+    }
+}
+
+
 
 }
 
