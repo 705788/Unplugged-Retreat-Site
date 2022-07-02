@@ -130,7 +130,7 @@ p {
 }
 
 img {
-
+	width: 100%;
 }
 
 figure {
@@ -284,7 +284,7 @@ footer .copyright {
     justify-content: center;
 	flex-flow: row wrap;
 
-	background-image: url('../img/hero.png');
+	background-image: url('../img/hero.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	color:#fff;
@@ -344,7 +344,7 @@ input[type=button] {
     justify-content: center;
 	flex-flow: row wrap;
 
-	background-image: url('../img/nature-path.png');
+	background-image: url('../img/campsite.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
