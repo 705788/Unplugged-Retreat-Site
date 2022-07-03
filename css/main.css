@@ -218,46 +218,34 @@ header nav ul li {
 /* Footer styles */
 
 footer {
-	/*display: flex;
-    justify-content: center;
-    align-items: center;*/
+	display: flex;
 	flex-flow: column;/* AKA flex-direction:column; ***/
+
 	text-align: center;
+}
+
+footer .content-wrapper {
+	width: 55%;
+	margin: 50px 0;
+}
+
+.footer-content {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: column;
 }
 
 footer p {
 	margin: 0;
 }
 
-footer .content-wrapper {
-	width: 55%;
-	margin: 50px 0;
-
-	/*display: flex;
-    justify-content: center;
-    align-items: center;*/
-}
-
-/*
-.footer-content {
-	display: flex;
-    justify-content: center;
-    align-items: center;
-	flex-flow: column;
-}*/
-
-
-
 footer .contact {
 	margin-bottom: 50px;
+}
 
-	/*
-display: flex;
-    justify-content: center;
-    align-items: center;
-	flex-flow: column;*/
-
-
+footer .social {
+	min-width: 200px;
 }
 
 footer .social-icons {
@@ -270,6 +258,11 @@ footer .social-icons p {
 	display:flex;
 	justify-content: center;
 	align-items: center;
+
+	background: #527158;
+	width:40px;
+	height:40px;
+	border-radius: 100%;
 }
 
 footer .copyright {
@@ -360,6 +353,11 @@ input[type=button] {
 .features article {
 	width: 63%;
 	margin: 30px 0;
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: column;
 }
 
 .features .features-items {
@@ -367,6 +365,11 @@ input[type=button] {
     justify-content: center;
     align-items: center;
 	flex-flow: row wrap;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .features p {
@@ -647,7 +650,7 @@ header nav ul {
 		display: flex;
 		flex-flow: row;
 		justify-content: space-between;
-		align-items: center;;
+		align-items: flex-start;
     }
 
     footer .contact {
@@ -657,6 +660,10 @@ header nav ul {
 	footer h4 {
 		font-size: 1.5em;
 	    margin-bottom: 40px;
+	}
+
+	footer .social {
+		width: 30%;
 	}
 
 	footer p {
